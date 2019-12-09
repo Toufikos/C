@@ -7,7 +7,7 @@ int main()
     coçmmentaire sur
     plusiers lignes
     */
-
+    
     //DECLARATIONS
 
     //byte val1;
@@ -20,10 +20,8 @@ int main()
 
     char etat;
     const float pi =3.14;
-
+    
     int i=0, h=10;
-
-
 
     //pi=3.2;
     //Init
@@ -33,15 +31,11 @@ int main()
     note=17.5;
     cumul=100.0;
     etat = 'A';
-
-
+    
     printf("Message de \"Steeve\"");
-
-
 
     float x = 3/2.0f;
     double y = 2.0;
-
 
     printf("x : %3.2f", x);
 
@@ -66,7 +60,7 @@ int main()
     printf("x : %06.2f", x);
 
     printf("\nHello world!\n"); //Affiche Hello world \n : retrou a la ligne
-
+    
     float noteEleve=0;
     printf("Saisie une note : ");
     scanf("%f", &noteEleve);
@@ -74,13 +68,5 @@ int main()
 
     printf("\n%c, Note : %06.2f  ", lettre, noteEleve);
 
-
-
-
-
-
-
-
     return 0;
-
 }
