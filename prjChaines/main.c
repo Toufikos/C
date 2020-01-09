@@ -5,34 +5,29 @@
 
 int main()
 {
-    char nom[LG +1] =  "toto";
+    char nom[LG +1] =  "Yahyaoui", prenom[] = "Toufikos";
     char texte[40 + 1]="\0";
-    printf("%s", nom);
 
-
-    char pren[] = "steeve";
-    printf("%s", pren);
+    printf("%s \n", nom);
+    printf("%s \n", prenom);
 
     //printf("Saisir votre nom : ");
     //scanf("%s", nom);
     //printf("%s", nom);
 
     //fgets(nom, 20, stdin);
-    printf("%s", nom);
-
+    printf("%s \n", nom);
 
     strcpy(texte , nom);
-    printf("apres affecttation : %s", texte);
-
+    printf("Apres affectation : %s \n", texte);
 
     char *ch = "hello";
-    printf("%s", ++ch);
+    printf("%s \n", ++ch);
 
-
-    printf("Saisir votre adresse :");
+    printf("Saisir votre adresse : \n");
     char adresse[100+1];
     gets(adresse);
-    printf("%s", adresse);
+    printf("%s \n", adresse);
 
     //gets()
 
@@ -43,16 +38,14 @@ int main()
     int i=0;
 
     int lg = strlen(adresse);
-    printf("\n lg : %d", lg);
+    printf("\n lg : %d \n", lg);
     printf("\n");
-    while(adresse[i] != '\0')
-    {
-        putchar(adresse[i++]);
-        printf("\n");
-    }
 
-
-
+        while(adresse[i] != '\0')
+        {
+            putchar(adresse[i++]);
+            printf("\n");
+        }
 
     return 0;
 }
