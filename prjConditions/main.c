@@ -6,8 +6,6 @@ int main()
 
   float note = 5.5;
 
-
-
   if (note >= 10)
   {
     printf("Vous etes admis(e)");
@@ -19,6 +17,7 @@ int main()
   }
 
   char situfam = 'c';
+
   switch (situfam)
   {
     case 'C':
@@ -35,12 +34,6 @@ int main()
         printf("Cas invlaide");
         break;
 
-
   }
-
-
-
-
-
 
 }
