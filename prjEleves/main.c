@@ -34,21 +34,20 @@ int main()
             continue;
         }
 
-
         som+=note;
 
         if (note >= 10)
         {
             printf("\nEleve N° %d Vous etes admis(e) \navec la note de %f", cpt+1, note);
-        }
-        else
-        {
+
+        }else{
+
             if (note >= 8)
             {
                 printf("\nVous etes en rattrapage avec la note de %f", note);
-            }
-            else
-            {
+
+            }else{
+
                 printf("\nVous etes recalé(e) \navec la note de %f\n", note);
             }
         }
@@ -60,15 +59,13 @@ int main()
             noteMin = note;
 
         cpt++;
-
     }
     if (nbEleves > 0)
     {
         moy =som / nbEleves;
         printf("\nMax : %5.2f Min %5.2f Moyenne : %5.2f", noteMax, noteMin, moy);
-    }
-    else
-    {
+
+    }else{
         printf("Aucun Elève !!");
     }
 
