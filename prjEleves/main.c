@@ -60,6 +60,7 @@ int main()
 
         cpt++;
     }
+
     if (nbEleves > 0)
     {
         moy =som / nbEleves;
