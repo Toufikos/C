@@ -24,17 +24,13 @@ int main()
    //Pointeur
    float *pt =NULL;
 
-   for(som=0, pt = t[0] + ((NBL*NBC) -1) ; pt >= t[0]; pt--)
+   for(som=0, pt = t[0] + ((NBL*NBC) -1); pt >= t[0]; pt--)
    {
         printf("\n%f : ", *pt);
         som+=(*pt);
-
    }
 
     printf("\nSomme : %lf", som);
-
-
-
 
     return 0;
 }
