@@ -21,5 +21,8 @@ int main()
     printf("Total TTC %lf", totalTTC);
 
 
+    
+    
+    
     return 0;
 }
