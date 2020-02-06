@@ -5,9 +5,8 @@ void affValeur(); //fonction prototype
 void affValNb(int);
 double carre(int );
 
-//variable globale
+//variable globale : Déconseillé
 int cpt=50;
-
 
 int main()
 {
