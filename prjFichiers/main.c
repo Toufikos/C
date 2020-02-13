@@ -14,8 +14,6 @@ int lecture()
         return 1;
     }
 
-
-
     fseek(fp, -10, SEEK_END);
     do
     {
@@ -35,8 +33,6 @@ int lecture()
         return 2;
     }
 }
-
-
 
 int ecriture()
 {
@@ -69,8 +65,6 @@ int main()
 {
     int val = ecriture();
      val = lecture();
-
-
 
     return val;
 }
