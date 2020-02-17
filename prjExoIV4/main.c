@@ -14,7 +14,6 @@ int main()
     //oper=getchar();
     scanf("%c", &oper);
 
-
     printf("\n%c", oper);
     putchar(oper);
 
@@ -27,10 +26,8 @@ int main()
     res=operation(nb1,nb2,oper);
     printf("Résultat %f %c %f = %lf : ", nb1, oper, nb2, res);
 
-
     return 0;
 }
-
 
 double operation(float op1, float op2, char op)
 {
@@ -54,12 +51,4 @@ double operation(float op1, float op2, char op)
             break;
     }
     return res;
-
-
-
-
-
-
-
-
 }
