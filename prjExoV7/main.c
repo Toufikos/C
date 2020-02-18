@@ -13,6 +13,10 @@ int main()
 
     min = INT_MAX;
     max = INT_MIN;
+
+    printf(" INT_MAX : %d\n", INT_MAX);
+    printf(" INT_MIN : %d\n", INT_MIN);
+
     minMax(t, DIM, &min, &max);
     printf("Min %d Max : %d", min, max);
     return 0;
