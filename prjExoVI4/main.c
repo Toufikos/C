@@ -11,9 +11,5 @@ int main()
 
     printf("%s", jour[posJour -1]);
 
-
-
-
-
     return 0;
 }
