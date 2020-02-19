@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Taille des tableaux
 #define NBL 2
 #define NBC 3
+
 int main()
 {
     int t[2][3] = {{100, 200, 300}, {50,150,250}};
