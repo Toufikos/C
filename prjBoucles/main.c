@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,14 +28,8 @@ int main()
         som+=val;
         if (som > 100)
             break;
-
-
+        
         cpt++;
-
     }
         printf("\n Somme : %ld", som);
-
-
-
-
 }
