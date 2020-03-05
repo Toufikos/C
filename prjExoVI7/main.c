@@ -32,19 +32,5 @@ int main()
         printf("\n%s %s", pronoms[i], verbe);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
