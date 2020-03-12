@@ -7,7 +7,7 @@ int main()
 {
    float t[NBL][NBC] = {{10,20,30,40},{100,200,300,400},{1000,2000,3000,4000}};
    double som =0.0;
-
+   
    //Tableau
    for(int i=NBL-1; i >= 0; i--)
    {
@@ -21,7 +21,8 @@ int main()
    printf("\nSomme : %lf", som);
 
    printf("\n----------------------\n");
-   //Pointeur
+   
+   // Avec les Pointeurs
    float *pt =NULL;
 
    for(som=0, pt = t[0] + ((NBL*NBC) -1); pt >= t[0]; pt--)
