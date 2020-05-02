@@ -12,12 +12,10 @@ int main()
     permuteAdr(&v1, &v2);
     printf("Apres Appel - v1 : %d v2 : %d\n", v1, v2);
 
-
     int *p;
     p=&v1;
     printf("%d", *p);
-
-
+    
     return 0;
 }
 
@@ -31,8 +29,6 @@ void permuteAdr(int *p1, int *p2)
      printf("Dans fonction  permuteAdr - *p1 : %d *p2 : %d\n", *p1, *p2);
 }
 
-
-
 void permute(int a, int b)
 {
     int tampon=0;
@@ -42,5 +38,3 @@ void permute(int a, int b)
 
      printf("Dans fonction  permute - a : %d b : %d\n", a, b);
 }
-
-
