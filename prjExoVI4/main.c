@@ -10,6 +10,7 @@ int main()
     scanf("%d", &posJour);
 
     printf("%s", jour[posJour -1]);
+    printf("%s", jour[posJour +1]);
 
     return 0;
 }
