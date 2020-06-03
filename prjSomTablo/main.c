@@ -6,7 +6,6 @@
 double somTablo(float [], int);
 double somTablov2(float *, int);
 
-
 int main()
 {
     float t[5]= {10,20,30,40,50};
@@ -20,6 +19,20 @@ int main()
 double somTablov2(float *pt , int dim)
 {   
     float *adt =NULL;
+    double som=0.0;
+
+    for (adt=pt; adt < pt + dim; adt++)
+    {
+        som+= *adt;
+    }
+    return som;
+
+}
+
+// AV
+double somTablov3(float pt , int dim)
+{   
+    float adt =NULL;
     double som=0.0;
 
     for (adt=pt; adt < pt + dim; adt++)
