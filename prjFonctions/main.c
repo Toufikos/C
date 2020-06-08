@@ -14,7 +14,7 @@ int main()
     int cpt=20;
     printf("\n%d\n", ++cpt);
 
-
+    //
     affValeur();
     affValNb(5);
     printf("\n%d\n", ++cpt);
