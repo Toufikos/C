@@ -30,6 +30,7 @@ int main()
     }
 
     printf("\n-------------------\n");
+    
     printf("\n&tab[0] : %d tab : %d ", &tab[0], tab );
     printf("\n%d",  *tab);
     printf("\n%d", *tab + 1);
