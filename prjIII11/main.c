@@ -9,8 +9,8 @@ int main()
     {
         printf("Saisir une valeur : ");
         scanf("%d", &val);
-    }
-    while(val < 0);
+
+    }while(val < 0);
 
     for(int i=1; i <= val; i++)
     {
