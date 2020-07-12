@@ -14,9 +14,8 @@ int main()
     /*if (val1 > val2)
     {
         max=val1;
-    }
-    else
-        max=val2;
+    }else
+    max=val2;
     */
 
     max=(val1>val2)?val1:val2;
@@ -25,10 +24,6 @@ int main()
         max = val3;
 
     printf("Max : %d", max);
-
-
-
-
 
 
 
