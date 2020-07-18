@@ -32,7 +32,7 @@ int main()
 double operation(float op1, float op2, char op)
 {
     double res=0;
-    double res=0;
+    
 
     switch(op)
     {
