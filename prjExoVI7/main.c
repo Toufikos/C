@@ -23,7 +23,7 @@ int main()
     {
         strcpy(adterm, terminaisons[i]);
         //1
-        strcpy(ch, pronoms[i]); //affecvtation de chaine
+        strcpy(ch, pronoms[i]); //affectation de chaine
         strcat(ch, " ");    //concatenation vers ch
         strcat(ch, verbe);
         printf("\n%s", ch);
