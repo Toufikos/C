@@ -54,4 +54,8 @@ double operation(float op1, float op2, char op)
 }
 
 int oparation1(){
+    
+    int a = 1;
+    
+    return a;
 }
