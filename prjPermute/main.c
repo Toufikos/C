@@ -8,8 +8,11 @@ int main()
 {
     int v1=10, v2=20;
     printf("Avant Appel - v1 : %d v2 : %d\n", v1, v2);
+    
     //permute(&v1, &v2);
+    
     permuteAdr(&v1, &v2);
+    
     printf("Apres Appel - v1 : %d v2 : %d\n", v1, v2);
 
     int *p;
