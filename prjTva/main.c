@@ -7,6 +7,8 @@ int main()
     double prixHt;
     float tva = 0;
     double totalTTC=0;
+    
+    const float tvaf = 19.6;
 
     printf("Saisir le Nb d'articles : ");
     scanf("%d", &nbArt);
