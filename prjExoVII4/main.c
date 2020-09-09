@@ -12,7 +12,7 @@ int main()
     for(int i=0; i< NP; i++)
     {
         printf("\nSaisir le nom du point avec les coordonnees ");
-        gets(ligne);
+        gets(ligne); //
         int nb = sscanf(ligne, "%c %d %d", &courbe[i].c, &courbe[i].x, &courbe[i].y);
         printf("\nNb arguments : %d", nb);
     }
