@@ -18,7 +18,7 @@ int main()
     }
     
     
-    printf("courbe" : =
+   
     affiche(courbe, NP);
     return 0;
 }
