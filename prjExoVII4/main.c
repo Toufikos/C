@@ -9,7 +9,6 @@ int main()
 
     affiche(courbe, NP);
 
-
     for(int i=0; i< NP; i++)
     {
         printf("\nSaisir le nom du point avec les coordonnees ");
