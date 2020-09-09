@@ -16,7 +16,9 @@ int main()
         int nb = sscanf(ligne, "%c %d %d", &courbe[i].c, &courbe[i].x, &courbe[i].y);
         printf("\nNb arguments : %d", nb);
     }
-
+    
+    
+    printf("courbe" : =
     affiche(courbe, NP);
     return 0;
 }
