@@ -19,6 +19,7 @@ printf("%s", __VERSION__);
         printf("\n\tR - Rechercher \n");
         printf("\n\tP - Afficher tout le fichier \n");
         printf("\n\tQ - Quitter \n");
+        
 
         printf("Votre choix : ");
         __fpurge(stdin);
@@ -27,6 +28,10 @@ printf("%s", __VERSION__);
         switch(choix)
         {
             case 'A':
+            case 'a':
+                ajouter();
+                break;
+                case 'A':
             case 'a':
                 ajouter();
                 break;
