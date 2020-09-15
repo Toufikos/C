@@ -31,11 +31,6 @@ printf("%s", __VERSION__);
             case 'a':
                 ajouter();
                 break;
-                case 'A':
-            case 'a':
-                ajouter();
-                break;
-
             case 'R':
             case 'r':
                 rechercher();
