@@ -24,7 +24,6 @@ printf("%s", __VERSION__);
         __fpurge(stdin);
         choix = getchar();
 
-
         switch(choix)
         {
             case 'A':
