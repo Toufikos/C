@@ -46,7 +46,7 @@ int main()
     car = car +1;
     printf("\ncar: %c", car);
 
-    int num =1;//num
+    int num =1;
     printf("\n%d", num);
     printf("\n%3d", num);
     printf("\n%03d", num);
