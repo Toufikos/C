@@ -60,7 +60,6 @@ int ecriture()
     }
 }
 
-
 int main()
 {
     int val = ecriture();
