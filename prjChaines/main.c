@@ -11,10 +11,6 @@ int main()
     printf("%s \n", nom);
     printf("%s \n", prenom);
 
-    //printf("Saisir votre nom : ");
-    //scanf("%s", nom);
-    //printf("%s", nom);
-
     //fgets(nom, 20, stdin);
     printf("%s \n", nom);
 
