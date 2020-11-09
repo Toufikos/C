@@ -10,7 +10,10 @@ int main()
 
     printf("%s \n", nom);
     printf("%s \n", prenom);
-
+    
+    // Comm (voir sources)
+    
+    
     //fgets(nom, 20, stdin);
     printf("%s \n", nom);
 
