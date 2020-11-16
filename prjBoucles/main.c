@@ -7,7 +7,6 @@ int main()
     long som=10;
     
     //Rajouter plus de params
-
     for(cpt=0, som=0; cpt < 3; cpt++, val++)
     {
         som += cpt;
