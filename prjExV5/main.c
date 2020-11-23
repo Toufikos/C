@@ -21,6 +21,7 @@ int main()
    printf("\nSomme : %lf", som);
 
    printf("\n----------------------\n");
+   printf("\n----------------------\n");
    
    // Avec les Pointeurs
    float *pt =NULL;
