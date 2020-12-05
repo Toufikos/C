@@ -9,10 +9,7 @@ int main()
   if (note >= 10)
   {
     printf("Vous etes admis(e)");
-
-  }
-  else
-  {
+  }else{
    printf("Vous etes recalé(e)");
   }
 
