@@ -25,7 +25,7 @@ int main()
 
 void minMax(int t[], int dim, int *pMin, int *pMax)
 {
-    //*pMin=*pMax=t[0];
+    *pMin=*pMax=t[0];
 
     for(int i=0; i < dim; i++)
     {
