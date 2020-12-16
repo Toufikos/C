@@ -5,13 +5,15 @@ int main()
 {
     int cpt=0,val=0;
     long som=10;
-    
-    //Rajouter plus de params
+
     for(cpt=0, som=0; cpt < 3; cpt++, val++)
     {
         som += cpt;
     }
         printf("Somme : %ld \n val : %d", som, val);
+
+
+     // ********************* //
 
     cpt=0;
 
@@ -29,7 +31,7 @@ int main()
         som+=val;
         if (som > 100)
             break;
-        
+
         cpt++;
     }
         printf("\n Somme : %ld", som);
