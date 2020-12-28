@@ -14,7 +14,6 @@ int main()
 
     //fgets(nom, 20, stdin);
     printf("%s \n", nom);
-    printf("%s \n", prennom);
 
     strcpy(texte , nom);
     printf("Apres affectation : %s \n", texte);
