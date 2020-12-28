@@ -10,7 +10,7 @@ int main()
     {
         som += cpt;
     }
-        printf("Somme : %ld \n val : %d", som, val);
+        printf(" Somme : %ld \n val : %d", som, val);
 
 
      // ********************* //

@@ -5,19 +5,21 @@
 
 int main()
 {
+
     char nom[LG +1] =  "Yahyaoui", prenom[] = "Toufikos";
     char texte[40 + 1]="\0";
 
     printf("%s \n", nom);
     printf("%s \n", prenom);
-    
+
     //fgets(nom, 20, stdin);
     printf("%s \n", nom);
+    printf("%s \n", prennom);
 
     strcpy(texte , nom);
     printf("Apres affectation : %s \n", texte);
 
-    char *ch = "hello";
+    char *ch = "hello WORLD";
     printf("%s \n", ++ch);
 
     printf("Saisir votre adresse : \n");
@@ -25,7 +27,7 @@ int main()
     gets(adresse);
     printf("%s \n", adresse);
 
-    //gets()
+    // gets()
 
     char c = 'A';
     putchar(c);
