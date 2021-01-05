@@ -13,6 +13,7 @@ int main()
     printf("%s \n", prenom);
 
     //fgets(nom, 20, stdin);
+
     printf("%s \n", nom);
 
     strcpy(texte , nom);
