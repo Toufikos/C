@@ -11,7 +11,7 @@ int main()
 
     printf("%s \n", nom);
     printf("%s \n", prenom);
-    printf("%s \n", ADRESSE);
+
 
     //fgets(nom, 20, stdin);
 
