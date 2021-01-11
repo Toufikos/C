@@ -1,13 +1,25 @@
+
+
+
+
+********************************************************
+
 1. Editeur de texte
 2. Compilateur
 3. Débogueur
 
 IDE : environnement de dév.
 
-********************
+********************************************************
 
 #include <stdio.h>
 #include <stdlib.h> // Directive de préprocesseur
+
+// Instructions
+return 0; // Tout s'est bien passé.
+
+\n: retour à la ligne.
+\t: tabulation.
 
 
 
