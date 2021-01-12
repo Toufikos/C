@@ -1,5 +1,5 @@
 
-
+compilateur : code source en code binaire (.exe)
 
 
 ********************************************************
@@ -20,6 +20,45 @@ return 0; // Tout s'est bien passé.
 
 \n: retour à la ligne.
 \t: tabulation.
+
+********************************************************
+
+Variables :
+Adresse - Nom - Valeur
+
+signed char -127 127
+int -32.767 32.767
+long -2.147.483.647 2.147.483.647
+
+float -1 x1037 1 x1037
+double -1 x1037 1 x1037
+
+unsigned char 0 à 255
+unsigned int 0 à 65.535
+unsigned long 0 à 4.294.967.295
+
+Nombre entier, int. Nombre flotant, double.
+
+int a = 5; 
+const double b = 7;
+
+printf("vous avez %d et aussi %f", a, b);
+
+Format - Type
+"%d" int
+"%ld" long
+"%f" float
+"%f" double
+
+scanf("%d"; &a);
+
+
+
+
+
+
+
+
 
 
 
