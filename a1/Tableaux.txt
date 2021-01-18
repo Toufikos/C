@@ -1,0 +1,5 @@
+Valeurs à la suite dans la mémoire.
+Doit être du même type.
+
+***
+
