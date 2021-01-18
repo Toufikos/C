@@ -1,6 +1,10 @@
 
 compilateur : code source en code binaire (.exe)
 
+préprocesseur ->  	compilateur   				-> 	Linker (.exe)
+.h -> .c -> 	  	.o(binaire) 				-> 	Linker (.exe)
+			ou .obj (dépend du compilateur)
+			.a ou .lib (dépend du compilateur)	->	Linker (.exe)
 
 ********************************************************
 
@@ -53,6 +57,8 @@ Format - Type
 scanf("%d"; &a);
 
 ********************************************************
+age = (majeur) ? 18 : 17;
+
 
 
 
