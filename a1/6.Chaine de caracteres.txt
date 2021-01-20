@@ -1,0 +1,158 @@
+char lettre = 'A' (de -128 à 127) unsigned char (0 à 255)
+
+printf("%d\n",lettre); // position B = 66, C = 67 etc... (http://www.asciitable.com)
+printf("%c\n",lettre); // Affiche la lettre
+
+**********************************
+//Tableau
+
+char chaine[6]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
+    
+chaine[0] = 'S';
+chaine[1] = 'a';
+chaine[2] = 'l';
+chaine[3] = 'u';
+chaine[4] = 't';
+chaine[5] = '\0'; // On termine toujours avec \0 pour dire que c'est la fin.
+
+printf("%s", chaine);
+
+// Plus simple que ci-dessus (mais seulement pour l'initialisation)
+
+char chaine[] = "Salut"; // La taille du tableau chaine est automatiquement calculée (ou char*)
+printf("%s", chaine);
+
+***
+char prenom[100];
+
+printf("Comment t'appelles-tu petit Zero ? ");
+scanf("%s", prenom);
+printf("Salut %s, je suis heureux de te rencontrer !", prenom);
+
+**********************************
+Fonctions de manipulations des chaînes. (Avec #include <string.h>)
+
+//Longueur d'une chaine:
+size_t strlen(const char* chaine); //size_t (type speciale comme int), const : on ne modifie pas.
+
+//Copier une chaine dans une autre:
+char* strcpy(char* copieDeLaChaine, const char* chaineACopier);
+
+int main(int argc, char *argv[])
+{
+    /* On crée une chaîne "chaine" qui contient un peu de texte
+    et une copie (vide) de taille 100 pour être sûr d'avoir la place
+    pour la copie */
+    
+    char chaine[] = "Texte", copie[100] = {0};
+
+    strcpy(copie, chaine); // On copie "chaine" dans "copie"
+
+    // Si tout s'est bien passé, la copie devrait être identique à chaine
+    printf("chaine vaut : %s\n", chaine);
+    printf("copie vaut : %s\n", copie);
+
+    return 0;
+}
+//Concaténer 2 chaines:
+char* strcat(char* chaine1, const char* chaine2);
+
+//Comparer 2 chaines
+int strcmp(const char* chaine1, const char* chaine2); // Prototype
+
+int main(int argc, char *argv[])
+{
+    char chaine1[] = "Texte de test", chaine2[] = "Texte de test";
+
+    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
+    {
+        printf("Les chaines sont identiques\n");
+    }
+    else
+    {
+        printf("Les chaines sont differentes\n");
+    }
+
+    return 0;
+}
+
+//strchr: rechercher un caractère
+	// Cherche le premier caractère. Pour le dernier caractère utiliser : strrchr
+char* strchr(const char* chaine, int caractereARechercher); // Prototype
+
+int main(int argc, char *argv[])
+{
+    char chaine[] = "Texte de test", *suiteChaine = NULL;
+
+    suiteChaine = strchr(chaine, 'd');
+    if (suiteChaine != NULL) // Si on a trouvé quelque chose
+    {
+        printf("Voici la fin de la chaine a partir du premier d : %s", suiteChaine);
+    }
+
+    return 0;
+}
+
+//strpbrk: premier caractère de la liste
+char* strpbrk(const char* chaine, const char* lettresARechercher); // Prototype
+
+int main(int argc, char *argv[])
+{
+    char *suiteChaine;
+
+    // On cherche la première occurrence de x, d ou s dans "Texte de test" 
+    suiteChaine = strpbrk("Texte de test", "xds");
+
+    if (suiteChaine != NULL)
+    {
+        printf("Voici la fin de la chaine a partir du premier des caracteres trouves : %s", suiteChaine);
+    }
+
+    return 0;
+}
+
+//Il faut simplement retenir la règle suivante :
+//si vous utilisez les guillemets"", cela signifie chaîne ;
+//si vous utilisez les apostrophes'', cela signifie caractère.
+
+//strstr: rechercher une chaîne dans une autre
+	// A la diffèrence de strpbrk(pour 1 carac) strstr recherche toute la chaine.
+
+int main(int argc, char *argv[])
+{
+    char *suiteChaine;
+
+    // On cherche la première occurrence de "test" dans "Texte de test" :
+    suiteChaine = strstr("Texte de test", "test");
+    if (suiteChaine != NULL)
+    {
+        printf("Premiere occurrence de test dans Texte de test : %s\n", suiteChaine);
+    }
+
+    return 0;
+}
+
+//sprintf: écrire dans une chaîne (stdio.h)
+	// ressemble à printf
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+    char chaine[100];
+    int age = 15;
+
+    // On écrit "Tu as 15 ans" dans chaine
+    sprintf(chaine, "Tu as %d ans !", age);
+
+    // On affiche chaine pour vérifier qu'elle contient bien cela :
+    printf("%s", chaine);
+
+    return 0;
+}
+
+
+
+SRC: SDZ
+https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/15765-les-chaines-de-caracteres
