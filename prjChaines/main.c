@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define LG 20
+#define LG 20 //
 
 int main()
 {
-
+    //Autre possibilités.
     char nom[LG +1] =  "Yahyaoui", prenom[] = "Toufikos";
     char texte[40 + 1]="\0";
 
     printf("%s \n", nom);
     printf("%s \n", prenom);
-
 
     //fgets(nom, 20, stdin);
 
