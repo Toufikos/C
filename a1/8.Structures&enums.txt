@@ -10,5 +10,5 @@ struct Coordonnees
 	int y; // Ordonnées
 }; // point-virgule ici pour les structures
 
-struct Personne Repertoire[8];
+struct Nom_Structure Nom_Tableau[Nb_Elements];
 
