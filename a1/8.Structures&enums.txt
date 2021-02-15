@@ -1,6 +1,7 @@
 Créer nos propres types variables avec les structures et les énumérations.
 
-Définir une structure :
+******* Définir une structure :
+
 Une structure est un assemblage de variables qui peuvent avoir différents types.
 (généralement définie dans le .h)
 
@@ -11,4 +12,6 @@ struct Coordonnees
 }; // point-virgule ici pour les structures
 
 struct Nom_Structure Nom_Tableau[Nb_Elements];
+
+
 
