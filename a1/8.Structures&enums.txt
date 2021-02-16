@@ -30,8 +30,25 @@ int main(int argc, char *argv[]){
 }
 
 ******* Pointeur de struture :
+
 Coordonnees* point = NULL;
 
 ***
 
 (*point).x = 0; // raccourci : point->x = 0;
+
+
+
+******* Les énumérations :
+typedef enum Volume Volume;
+enum Volume
+{
+    FAIBLE = 10, MOYEN = 50, FORT = 100
+};
+
+
+
+
+
+src :
+https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16119-creez-vos-propres-types-de-variables
