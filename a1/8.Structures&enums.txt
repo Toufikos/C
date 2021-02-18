@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
 
 Coordonnees* point = NULL;
 
-***
+*****
 
 (*point).x = 0; // raccourci : point->x = 0;
 
