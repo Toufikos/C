@@ -1,6 +1,6 @@
 Créer nos propres types variables avec les structures et les énumérations.
 
-******* Définir une structure (dans le .h):
+******* Définir une structure (dans le .h) *************************************** :
 
 Une structure est un assemblage de variables qui peuvent avoir différents types.
 (généralement définie dans le .h)
@@ -16,7 +16,7 @@ struct Coordonnees
 
 struct Nom_Structure Nom_Tableau[Nb_Elements];
 
-******* Utilisation d'une structure (dans le .c) :
+******* Utilisation d'une structure (dans le .c) ********************************** :
 
 #include "main.h" 
 
@@ -37,9 +37,7 @@ Coordonnees* point = NULL;
 
 (*point).x = 0; // raccourci : point->x = 0;
 
-
-
-******* Les énumérations :
+******* Les énumérations ********************************************************** :
 typedef enum Volume Volume;
 enum Volume
 {
