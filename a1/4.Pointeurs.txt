@@ -14,7 +14,7 @@ age : valeur. & : adresse.
 
 Un pointeur est fait pour contenir des adresses. (Doit être du même type).
 
-int *monPointeur = NULL; 
+int *monPointeur = NULL; // Doit toujours ête déclaré NULL
 int *pointeurSurAge = &age;
 
 printf("%d", *pointeurSurAge); // affiche 11
