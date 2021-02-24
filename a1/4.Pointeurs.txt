@@ -20,7 +20,19 @@ int *pointeurSurAge = &age;
 printf("%d", *pointeurSurAge); // affiche 11
 
 
+// C++
+int main()
+{
+    int ageUtilisateur(16);
+    //Une variable de type int
+    int *ptr(0);
+    //Un pointeur pouvant contenir l'adresse d'un nombre entier
 
+    ptr = &ageUtilisateur;
+    //On met l'adresse de 'ageUtilisateur' dans le pointeur 'ptr'
+
+    return 0;
+}
 
 
 
