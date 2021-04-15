@@ -1,0 +1,71 @@
+Le préprocesseur est un programme qui analyse votre code source et y effectue des modifications 
+avant la compilation.
+
+
+#define AGE 3
+int main(){ int vies = VIE; }
+
+***
+#define TAILLE_MAX      1000
+
+int main(int argc, char *argv[])
+{
+    char chaine1[TAILLE_MAX], chaine2[TAILLE_MAX]; //Contrairement aux variables/const ici on peut mettre dans []
+    // ...
+
+***
+Constantes prédéfinies par le préprocesseur :
+__LINE__: donne le numéro de la ligne actuelle.
+__FILE__: donne le nom du fichier actuel.
+__DATE__: donne la date de la compilation.
+__TIME__: donne l'heure de la compilation.
+
+***
+Macros 
+#define COUCOU() printf("Coucou");
+int main(int argc, char *argv[]){ COUCOU()  return 0;} // Pas de ; à la fin pour l'appel d'une macro.
+
+***
+#define WINDOWS
+
+#ifdef WINDOWS
+    /* Code source pour Windows */
+#endif
+
+#ifdef LINUX
+    /* Code source pour Linux */
+#endif
+
+#ifdef MAC
+    /* Code source pour Mac */
+#endif
+
+***
+// Les inclusions 
+//(pour éviter le bordel des includes avec des fichiers dépendant les uns des autres)
+#ifndef DEF_NOMDUFICHIER
+#define DEF_NOMDUFICHIER
+	/* Contenu de votre fichier .h (autres include, prototypes, define...) */
+	 // Tout doit être entre #ifndef et #endif
+		// Changer le nom de constante pour les autres fichiers .h (DEF_NOMDUFICHIER)
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/15954-le-preprocesseur

@@ -1,0 +1,52 @@
+Créer nos propres types variables avec les structures et les énumérations.
+
+******* Définir une structure (dans le .h) *************************************** :
+
+Une structure est un assemblage de variables qui peuvent avoir différents types.
+(généralement définie dans le .h)
+
+typedef struct Coordonnees Coordonnees;
+struct Coordonnees
+{
+	int x; // Abscisses
+	int y; // Ordonnées
+}; // point-virgule ici pour les structures
+
+// typedef : alias de structure pour éviter de mettre struct dans le .c
+
+struct Nom_Structure Nom_Tableau[Nb_Elements];
+
+******* Utilisation d'une structure (dans le .c) ********************************** :
+
+#include "main.h" 
+
+int main(int argc, char *argv[]){
+
+	Coordonnes point; 
+	point.x = 10;
+	point.y = 20;
+
+	return 0;
+}
+
+******* Pointeur de struture ****************************************************** :
+
+Coordonnees* point = NULL;
+
+*****
+
+(*point).x = 0; // raccourci : point->x = 0;
+
+******* Les énumérations ********************************************************** :
+typedef enum Volume Volume;
+enum Volume
+{
+    FAIBLE = 10, MOYEN = 50, FORT = 100
+};
+
+
+
+
+
+src :
+https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16119-creez-vos-propres-types-de-variables

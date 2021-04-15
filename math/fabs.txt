@@ -1,0 +1,12 @@
+Renvoie toujours un nombre en positif :
+
+double x, result;
+
+x = -1.5;
+result = fabs(x);
+
+printf("|%.2lf| =  %.2lf\n", x, result);
+
+https://www.programiz.com/c-programming/library-function/math.h/fabs
+
+//

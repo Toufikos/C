@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1572450298 source:/home/userc/projectsC/prjChaines/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1578574463 source:/root/Documents/ProjetsQt/p_cours/C/C/prjChaines/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

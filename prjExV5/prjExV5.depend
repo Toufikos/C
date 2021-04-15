@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1581947440 source:/home/hunn/Documents/Dev/C/C/prjExV5/main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1572267090 source:/home/userc/projectsC/prjExo1/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1581947440 source:/home/hunn/Documents/Dev/C/C/prjExo1/main.c
+	<stdio.h>
+	<stdlib.h>
+

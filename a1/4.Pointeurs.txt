@@ -1,0 +1,30 @@
+Adresse - Valeur
+***
+
+int age = 11;
+
+printf("L'adresse de la variable age est : %p", &age);
+
+%p // Exadécimale
+%d // Décimale
+
+***
+age : valeur. & : adresse.
+***
+
+Un pointeur est fait pour contenir des adresses. (Doit être du même type).
+
+int *monPointeur = NULL;
+int *pointeurSurAge = &age;
+
+printf("%d", *pointeurSurAge); // affiche 11
+
+
+
+
+
+
+
+
+
+src : SDZ.
